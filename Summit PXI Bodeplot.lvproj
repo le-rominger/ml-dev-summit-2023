@@ -25,7 +25,6 @@
 				<Item Name="niFgen Get Session Reference.vi" Type="VI" URL="/&lt;instrlib&gt;/niFgen/niFgen.llb/niFgen Get Session Reference.vi"/>
 				<Item Name="niFgen gRPC Device Server.ctl" Type="VI" URL="/&lt;instrlib&gt;/niFgen/niFgen.llb/niFgen gRPC Device Server.ctl"/>
 				<Item Name="niFgen Initialize With Channels for gRPC Session.vi" Type="VI" URL="/&lt;instrlib&gt;/niFgen/niFgen.llb/niFgen Initialize With Channels for gRPC Session.vi"/>
-				<Item Name="niFgen Initialize With Options.vi" Type="VI" URL="/&lt;instrlib&gt;/niFgen/niFgen.llb/niFgen Initialize With Options.vi"/>
 				<Item Name="niFgen Initiate Generation.vi" Type="VI" URL="/&lt;instrlib&gt;/niFgen/niFgen.llb/niFgen Initiate Generation.vi"/>
 				<Item Name="niFgen IVI Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/niFgen/niFgen.llb/niFgen IVI Error Converter.vi"/>
 				<Item Name="niFgen Output Enable.vi" Type="VI" URL="/&lt;instrlib&gt;/niFgen/niFgen.llb/niFgen Output Enable.vi"/>
@@ -68,7 +67,6 @@
 				<Item Name="niScope glitch condition.ctl" Type="VI" URL="/&lt;instrlib&gt;/niScope/Controls/niScope glitch condition.ctl"/>
 				<Item Name="niScope gRPC Device Server.ctl" Type="VI" URL="/&lt;instrlib&gt;/niScope/niScope gRPC Device Server.ctl"/>
 				<Item Name="niScope Initialize for gRPC Session.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/niScope Initialize for gRPC Session.vi"/>
-				<Item Name="niScope Initialize With Options.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/niScope Initialize With Options.vi"/>
 				<Item Name="niScope LabVIEW Error.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Utility/niScope LabVIEW Error.vi"/>
 				<Item Name="niScope Multi Fetch Array Measurement Cluster.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Measurements/niScope Multi Fetch Array Measurement Cluster.vi"/>
 				<Item Name="niScope Multi Fetch Array Measurement.vi" Type="VI" URL="/&lt;instrlib&gt;/niScope/Measurements/niScope Multi Fetch Array Measurement.vi"/>
