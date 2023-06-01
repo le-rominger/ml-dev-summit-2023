@@ -15,4 +15,20 @@
 			<string>Instrument_2.sfpcache</string>
 		</value>
 	</item>
+	<item>
+		<key>
+			<string>Instruments_a1a13b518a7a49f19877111af39d524c.sfpcache</string>
+		</key>
+		<value>
+			<string>Instruments.sfpcache</string>
+		</value>
+	</item>
+	<item>
+		<key>
+			<string>ML Plugin_f74cbe46b04a4b629eeb9320e2be28aa.sfpcache</string>
+		</key>
+		<value>
+			<string>ML Plugin.sfpcache</string>
+		</value>
+	</item>
 </SerializableDictionary>

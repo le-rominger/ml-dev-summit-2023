@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="A43808C524CD1A65D4F43DA3314A32F970B32555E6D46D38DFA3B1924181BDD2866243375C7B603BBBAD4114FA1582D3453A122DC13B55F1ECA70EC6644697DA" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="B589DAFC49C60277E19AE10849B0D42E699A986B5821A54C7E7930E1568F08B48B26F3FA90954E71D468244EB747774C08ED8664C6750FCB120AA7BD287285B8" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="23.3.0.50000" FeatureSetName="Pin Map" Name="http://www.ni.com/InstrumentFramework/PinMap" OldestCompatibleVersion="21.3.0.0" Version="21.3.0.0" />
 		<ParsableNamespace AssemblyFileVersion="9.8.0.50000" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -13,8 +13,8 @@
 		<NameScopingEnvoy Id="a5401f5c958a4a4396f4d178c5a0acfb" ModelDefinitionType="DefaultTarget" Name="DefaultTarget">
 			<DefaultTarget />
 			<FileReference Id="9c4fa6b1feac4168a987eb5a2e332e3f" ModelDefinitionType="{http://www.ni.com/InstrumentFramework/PinMap}PinMapDefinition" Name="PinMap.pinmap" StoragePath="..\Bodeplot UI\PinMap.pinmap" p4:IsActive="True" xmlns:p4="http://www.ni.com/InstrumentFramework/PinMap" />
-			<SourceFileReference Bindings="EnvoyManager" Id="f74cbe46b04a4b629eeb9320e2be28aa" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.UnifiedTask" Name="Instrument.sfp" StoragePath="Instrument.sfp" />
-			<SourceFileReference Bindings="EnvoyManager" Id="a1a13b518a7a49f19877111af39d524c" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.UnifiedTask" Name="Instrument_2.sfp" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.Scope.SourceModel.UnifiedTaskDocumentType" StoragePath="Instrument_2.sfp" />
+			<SourceFileReference Bindings="EnvoyManager" Id="f74cbe46b04a4b629eeb9320e2be28aa" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.UnifiedTask" Name="ML Plugin.sfp" StoragePath="ML Plugin.sfp" />
+			<SourceFileReference Bindings="EnvoyManager" Id="a1a13b518a7a49f19877111af39d524c" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.UnifiedTask" Name="Instruments.sfp" OverridingModelDefinitionType="NationalInstruments.InstrumentFramework.Scope.SourceModel.UnifiedTaskDocumentType" StoragePath="Instruments.sfp" />
 		</NameScopingEnvoy>
 	</Project>
 	<ProjectInformation xmlns="http://www.ni.com/PlatformFramework" />
