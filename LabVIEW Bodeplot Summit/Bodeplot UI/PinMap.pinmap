@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PinMap xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.5">
+	<Instruments>
+		<NIScopeInstrument name="PXi_Scope" numberOfChannels="2" group="Scope" />
+		<NIFGenInstrument name="PXi_Fgen" numberOfChannels="1" />
+	</Instruments>
+	<Pins>
+		<DUTPin name="Vin_signal" />
+		<DUTPin name="Vin_measure" />
+		<DUTPin name="Vout_measure" />
+	</Pins>
+	<PinGroups></PinGroups>
+	<Sites>
+		<Site siteNumber="0" />
+	</Sites>
+	<Connections>
+		<Connection pin="Vin_measure" siteNumber="0" instrument="PXi_Scope" channel="0" />
+		<Connection pin="Vin_signal" siteNumber="0" instrument="PXi_Fgen" channel="0" />
+		<Connection pin="Vout_measure" siteNumber="0" instrument="PXi_Scope" channel="1" />
+	</Connections>
+</PinMap>
