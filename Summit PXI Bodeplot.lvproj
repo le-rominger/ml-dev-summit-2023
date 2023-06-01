@@ -13,6 +13,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Bode Plot - PXI.lvlib" Type="Library" URL="../LabVIEW Bodeplot Summit/Logic/Bode Plot - PXI.lvlib"/>
 		<Item Name="LabVIEW Bodeplot Summit.lvlib" Type="Library" URL="../LabVIEW Bodeplot Summit/LabVIEW Bodeplot Summit.lvlib"/>
+		<Item Name="Measurement UI.measui" Type="Document" URL="../LabVIEW Bodeplot Summit/Bodeplot UI/Measurement UI.measui"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niFgen Abort Generation.vi" Type="VI" URL="/&lt;instrlib&gt;/niFgen/niFgen.llb/niFgen Abort Generation.vi"/>
@@ -184,7 +185,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/LabVIEW Bodeplot Summit/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{55485854-5870-47FC-803C-3756A21C0C7A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F3138A99-460F-4F73-A4E6-51EC776FD7AC}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/LabVIEW Bodeplot Summit.lvlib/Get Measurement Details.vi</Property>
