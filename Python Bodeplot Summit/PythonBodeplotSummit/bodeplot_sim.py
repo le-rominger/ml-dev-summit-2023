@@ -2,73 +2,75 @@
 @author: Wolfgang R
 @description: Simulates a bodeplot using PySpice
 @requires: Python 3.9 64-Bit
+TODO:
 https://pyspice.fabrice-salvaire.fr/releases/v1.4/overview.html
 pip install PySpice
 pyspice-post-installation --install-ngspice-dll
 pyspice-post-installation --check-install
 
 """
+import math
+import numpy as np
 
 from PySpice.Unit import *
 from PySpice.Spice.Netlist import Circuit
-from PySpice.Plot.BodeDiagram import bode_diagram
-import math
-import numpy as np
-import matplotlib.pyplot as plt
-# import seaborn as sns
-# sns.set()
-# sns.set_style('dark')
+from bodeplot_base import BodeplotBase
 import PySpice.Logging.Logging as Logging
 logger = Logging.setup_logging()
 
 
 jumper = False
-class BodePlotSim(object):
-    def __init__(self):pass
-    def measure(self):pass
-
-circuit = Circuit('Low-Pass RC Filter')
-
-circuit.SinusoidalVoltageSource('input', 'in', circuit.gnd, amplitude=1@u_V)
-
-if jumper:
-    R1 = circuit.R(1, 'in', 'out', 10@u_kΩ)
-else:
-    R1 = circuit.R(1, 'in', 'out', 3.3@u_kΩ)
-C1 = circuit.C(1, 'out', circuit.gnd, 6.8@u_nF)
-
-break_frequency = 1 / (2 * math.pi * float(R1.resistance * C1.capacitance))
-
-print("Break frequency = {:.1f} Hz".format(break_frequency))
-
-simulator = circuit.simulator(temperature=25, nominal_temperature=25)
-analysis = simulator.ac(start_frequency=100@u_Hz, stop_frequency=100@u_kHz,
-                        number_of_points=10,  variation='dec')
-
-figure, axes = plt.subplots(2, figsize=(20, 10))
-style = {
-    'marker':'x',
-    'color':'blue',
-    'linestyle':'--'
+class BodePlotSim(BodeplotBase):
     
-}
-axes[0].semilogx(analysis.frequency, 20*np.log10(np.absolute(analysis.out)), **style )
-axes[0].grid(True)
-axes[0].grid(True, which='minor')
-axes[0].set_xlabel("Frequency [Hz]")
-axes[0].set_ylabel("Gain [dB]")
+    def __init__(self):
+        super().__init__()
+        self._circuit = Circuit('Low-Pass RC Filter')
 
-axes[1].semilogx(analysis.frequency, np.angle(analysis.out, deg=False), **style )
-axes[1].grid(True)
-axes[1].grid(True, which='minor')
-axes[1].set_xlabel("Frequency [Hz]")
-axes[1].set_ylabel("Phase [rad]")
-axes[1].set_ylim(-math.pi/2, 0)
-plt.yticks((-math.pi/2, -math.pi/4, 0),
-                  (r"$-\frac{\pi}{2}$", r"$-\frac{\pi}{4}$", 0))
+    def _configure_arb(self):
+        # -- Configure Signal Generator
+        self._circuit.SinusoidalVoltageSource('input', 'vin', self._circuit.gnd, amplitude=self.amplitude)
 
-for ax in axes:
-    ax.axvline(x=break_frequency, color='red')
+    def _configure_scope(self):
+        # --- Configure Circuit Connections
+        if jumper:
+            R1 = self._circuit.R(1, 'vin', 'vout', 10@u_kΩ)
+        else:
+            R1 = self._circuit.R(1, 'vin', 'vout', 3.3@u_kΩ)
+        C1 = self._circuit.C(1, 'vout', self._circuit.gnd, 6.8@u_nF)
+        self.R1 = float(R1.resistance)
+        self.C1 = float(C1.capacitance)
+        self._calculate_break()
+        print("Break frequency = {:.1f} Hz".format(self.f_cut_off))
 
-plt.suptitle("Bode Diagram of a Low-Pass RC Filter")
-plt.show()
+# -- This would run a full AC analysis
+    # def measure(self):
+    #     self._configure_arb()
+    #     self._configure_scope()
+    #     simulator = self._circuit.simulator(temperature=25, nominal_temperature=25)
+    #     analysis =  simulator.ac(start_frequency=self.f_start, stop_frequency=self.f_stop,
+    #                     number_of_points=self.f_steps,  variation='dec')
+
+    #     self.phases = np.angle(analysis.vout, deg=False)
+    #     self.gains = 20*np.log10(np.absolute(analysis.vout/analysis.vin))
+    #     self.frequencies = analysis.frequency
+
+    def _measure_single(self, f: float) -> tuple:
+        """ Run Single Point Simulation """
+        simulator = self._circuit.simulator(temperature=25, nominal_temperature=25)
+        analysis = simulator.ac(start_frequency=f, stop_frequency=f, number_of_points=1, variation='dec')
+        gain = 20*np.log10(np.absolute(analysis.vout/analysis.vin))[0]
+        phase = np.angle(analysis.vout, deg=True)[0]
+        return(gain, phase)
+    
+
+
+if __name__ == "__main__":
+    #
+    bp = BodePlotSim()
+    bp.f_start = 200
+    bp.f_stop = 50e3
+    bp.f_steps = 20
+    bp.amplitude = 2
+    bp.measure()
+    # print(bp.measure_single(5000))
+    bp.plot()

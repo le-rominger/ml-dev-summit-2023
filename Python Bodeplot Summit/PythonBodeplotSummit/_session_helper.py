@@ -1,10 +1,11 @@
 """
-@author: Wolfgang R
-@description: Helper function for Session Reservation
-
+@author: Wolfgang R, NI
+@description: Helper function for Session Reservation and creation
+Custom Development from https://github.com/ni/measurementlink-python
 """
 
 import niscope
+
 import nifgen
 
 import ni_measurementlink_service as nims

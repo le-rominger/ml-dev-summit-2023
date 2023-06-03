@@ -1,4 +1,7 @@
-"""Helper classes and functions for MeasurementLink examples."""
+"""
+@author: NI
+@description: Helper classes and functions for MeasurementLink examples.
+"""
 
 import logging
 import pathlib
