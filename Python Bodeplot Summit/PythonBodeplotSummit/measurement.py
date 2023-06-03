@@ -13,9 +13,10 @@ import click
 import grpc
 from typing import Tuple
 import ni_measurementlink_service as nims
-from _helpers import ServiceOptions, str_to_enum
 from _session_helper import create_nifgen_session, create_niscope_session
-from bodeplot import Bodeplot
+
+from bodeplot_pxi import Bodeplot
+from bodeplot_sim import BodePlotSim
 
 service_directory = pathlib.Path(__file__).resolve().parent
 measurement_service = nims.MeasurementService(
@@ -24,8 +25,7 @@ measurement_service = nims.MeasurementService(
     ui_file_paths=[service_directory / "PythonBodeplotSummit.measui"],
 )
 
-
-
+# -- configure ML parameters for measurement service
 @measurement_service.register_measurement
 @measurement_service.configuration(
     "filter_pins",
@@ -39,10 +39,10 @@ measurement_service = nims.MeasurementService(
     "Vin_signal",
     instrument_type=nims.session_management.INSTRUMENT_TYPE_NI_FGEN,
 )
-@measurement_service.configuration("Start Freq.", nims.DataType.Double, 100.0)
-@measurement_service.configuration("Stop Frequ.", nims.DataType.Double, 50.0e3)
+@measurement_service.configuration("Start Frequency", nims.DataType.Double, 100.0)
+@measurement_service.configuration("Stop Frequency", nims.DataType.Double, 50.0e3)
 @measurement_service.configuration("Amplitude", nims.DataType.Double, 1.0)
-@measurement_service.configuration("Freq. Step", nims.DataType.Int32, 10)
+@measurement_service.configuration("Frequency Step", nims.DataType.Int32, 10)
 @measurement_service.output("Gain", nims.DataType.DoubleArray1D)
 @measurement_service.output("Phase", nims.DataType.DoubleArray1D)
 @measurement_service.output("actual_gain", nims.DataType.Double)
@@ -56,6 +56,9 @@ def measure(filter_pins:str,
 
     logging.info(f"pins={filter_pins}, f_start={f_start}, f_stop={f_stop}, steps={steps}, vpp={vpp}")
 
+# ==================================================================
+# -- FRAMEWORK CODE
+# ==================================================================
 # -- Add Cancellation callback
     pending_cancellation = False
 
@@ -109,19 +112,20 @@ def measure(filter_pins:str,
                 grpc.StatusCode.INVALID_ARGUMENT,
                 f"Unsupported number of sessions: {len(fgen_reservation.session_info)}",
         )
-
-# --- CALL measurement
-        bp = Bodeplot()
-        bp.scope = create_niscope_session(scope_reservation.session_info[0], measurement_service)
-        bp.fgen = create_nifgen_session(fgen_reservation.session_info[0], measurement_service)
+# ==================================================================
+# --- Perform measurement
+# ==================================================================
+        bp = BodePlotSim()
+        # bp.scope = create_niscope_session(scope_reservation.session_info[0], measurement_service)
+        # bp.fgen = create_nifgen_session(fgen_reservation.session_info[0], measurement_service)
         bp.f_start = f_start
         bp.f_stop = f_stop
         bp.f_steps = steps
         bp.amplitude = vpp
         bp.measure()
         # bp.measure_single()
-        
-        return ([1.0,2.0,3.0],[1.0,2.0,3.0],0.0,1.0)
+        print(bp.phases)
+        return (bp.gains,bp.phases,bp.f_cut_off,1.0)
     return ()
 
 
