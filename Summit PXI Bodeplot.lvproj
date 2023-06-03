@@ -176,7 +176,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/LabVIEW Bodeplot Summit.lvlib/Advanced/Build Assets/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{2ED84B51-5CFF-4745-B6FE-948DDEAD3383}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabVIEWBodeplotSummit.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/LabVIEW Bodeplot Summit/LabVIEWBodeplotSummit.exe</Property>
