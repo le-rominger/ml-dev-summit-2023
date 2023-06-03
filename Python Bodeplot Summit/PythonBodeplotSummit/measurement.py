@@ -34,7 +34,7 @@ measurement_service = nims.MeasurementService(
     instrument_type=nims.session_management.INSTRUMENT_TYPE_NI_SCOPE,
 )
 @measurement_service.configuration(
-    "vin_signal",
+    "Vin_signal",
     nims.DataType.Pin,
     "Vin_signal",
     instrument_type=nims.session_management.INSTRUMENT_TYPE_NI_FGEN,
@@ -42,7 +42,10 @@ measurement_service = nims.MeasurementService(
 @measurement_service.configuration("Start Frequency", nims.DataType.Double, 100.0)
 @measurement_service.configuration("Stop Frequency", nims.DataType.Double, 50.0e3)
 @measurement_service.configuration("Amplitude", nims.DataType.Double, 1.0)
-@measurement_service.configuration("Frequency Step", nims.DataType.Int32, 10)
+@measurement_service.configuration("Frequency Steps", nims.DataType.Int32, 10)
+@measurement_service.configuration("Simulate", nims.DataType.Boolean, False)
+@measurement_service.configuration("R1", nims.DataType.Double, 3.3e3)
+@measurement_service.configuration("C1", nims.DataType.Double, 6.8e-9)
 @measurement_service.output("Gain", nims.DataType.DoubleArray1D)
 @measurement_service.output("Phase", nims.DataType.DoubleArray1D)
 @measurement_service.output("actual_gain", nims.DataType.Double)
@@ -52,7 +55,10 @@ def measure(filter_pins:str,
             f_start:float,
             f_stop:float,
             vpp:float,
-            steps:int) -> Tuple:
+            steps:int,
+            simulate:bool,
+            R1:float,
+            C1:float) -> Tuple:
 
     logging.info(f"pins={filter_pins}, f_start={f_start}, f_stop={f_stop}, steps={steps}, vpp={vpp}")
 
@@ -115,16 +121,21 @@ def measure(filter_pins:str,
 # ==================================================================
 # --- Perform measurement
 # ==================================================================
-        bp = BodePlotSim()
-        # bp.scope = create_niscope_session(scope_reservation.session_info[0], measurement_service)
-        # bp.fgen = create_nifgen_session(fgen_reservation.session_info[0], measurement_service)
+        if simulate:
+            bp = BodePlotSim()
+            bp.R1 = R1
+            bp.C1 = C1
+        else:
+            bp = Bodeplot()
+            bp.scope = create_niscope_session(scope_reservation.session_info[0], measurement_service)
+            bp.fgen = create_nifgen_session(fgen_reservation.session_info[0], measurement_service)
         bp.f_start = f_start
         bp.f_stop = f_stop
         bp.f_steps = steps
         bp.amplitude = vpp
         bp.measure()
         # bp.measure_single()
-        print(bp.phases)
+        # print(bp.phases)
         return (bp.gains,bp.phases,bp.f_cut_off,1.0)
     return ()
 
