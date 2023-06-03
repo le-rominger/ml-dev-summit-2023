@@ -64,9 +64,11 @@ class PinMapClient(object):
         """
         pin_map_path = pathlib.Path(pin_map_id)
         request = pin_map_service_pb2.UpdatePinMapFromXmlRequest(
-            pin_map_id=pin_map_id, pin_map_xml=pin_map_path.read_text(encoding="utf-8")
+            pin_map_id=pin_map_id, pin_map_xml=pin_map_path.read_text(
+                encoding="utf-8")
         )
-        response: pin_map_service_pb2.PinMap = self._client.UpdatePinMapFromXml(request)
+        response: pin_map_service_pb2.PinMap = self._client.UpdatePinMapFromXml(
+            request)
         assert response.pin_map_id == pin_map_id
 
 
