@@ -59,6 +59,8 @@ class Bodeplot(BodeplotBase):
         self.scope.channels[channel_list].input_impedance = 1e6
         self.scope.channels[channel_list].vertical_range = 4
         self.scope.channels[channel_list].vertical_offset = 0
+        sr = 10e6
+        records = int(20 * 1/self.f_start * sr)
         self.scope.configure_horizontal_timing(10.0e6, 100000, 50.0, 1,True)
         self.scope.commit()
 

@@ -13,7 +13,6 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Bode Plot - PXI.lvlib" Type="Library" URL="../Logic/Bode Plot - PXI.lvlib"/>
 		<Item Name="LabVIEW Bodeplot Summit.lvlib" Type="Library" URL="../LabVIEW Bodeplot Summit.lvlib"/>
-		<Item Name="Measurement UI.measui" Type="Document" URL="../Bodeplot UI/Measurement UI.measui"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niFgen Abort Generation.vi" Type="VI" URL="/&lt;instrlib&gt;/niFgen/niFgen.llb/niFgen Abort Generation.vi"/>
@@ -176,7 +175,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/LabVIEW Bodeplot Summit.lvlib/Advanced/Build Assets/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{2ED84B51-5CFF-4745-B6FE-948DDEAD3383}</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">LabVIEWBodeplotSummit.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/LabVIEW Bodeplot Summit/LabVIEWBodeplotSummit.exe</Property>
@@ -185,7 +184,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/LabVIEW Bodeplot Summit/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{F3138A99-460F-4F73-A4E6-51EC776FD7AC}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{EB625614-2FB1-4ED0-A243-F9B296E3340D}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/LabVIEW Bodeplot Summit.lvlib/Get Measurement Details.vi</Property>
@@ -219,7 +218,10 @@
 				<Property Name="Source[8].itemID" Type="Ref">/My Computer/LabVIEW Bodeplot Summit.lvlib/Run Service.vi</Property>
 				<Property Name="Source[8].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[8].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">9</Property>
+				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[9].itemID" Type="Ref"></Property>
+				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">10</Property>
 				<Property Name="TgtF_companyName" Type="Str">FH JOANNEUM</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">LabVIEW Bodeplot Summit</Property>
 				<Property Name="TgtF_internalName" Type="Str">LabVIEW Bodeplot Summit</Property>
@@ -228,6 +230,79 @@
 				<Property Name="TgtF_targetfileGUID" Type="Str">{7851922C-B20F-4342-B6EC-7DFAAD624B47}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">LabVIEWBodeplotSummit.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Pkg" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
+				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
+				<Property Name="NIPKG_allDependenciesToFeed" Type="Bool">false</Property>
+				<Property Name="NIPKG_allDependenciesToSystemLink" Type="Bool">false</Property>
+				<Property Name="NIPKG_certificates" Type="Bool">true</Property>
+				<Property Name="NIPKG_createInstaller" Type="Bool">false</Property>
+				<Property Name="NIPKG_feedLocation" Type="Path">../builds/NI_AB_PROJECTNAME/Pkg/Feed</Property>
+				<Property Name="NIPKG_feedLocation.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="NIPKG_installerArtifacts" Type="Str"></Property>
+				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
+				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/Pkg/Package Installer</Property>
+				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str"></Property>
+				<Property Name="NIPKG_license" Type="Ref"></Property>
+				<Property Name="NIPKG_packageVersion" Type="Bool">false</Property>
+				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
+				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
+				<Property Name="NIPKG_VisibleForRuntimeDeployment" Type="Bool">false</Property>
+				<Property Name="PKG_actions.Count" Type="Int">0</Property>
+				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
+				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
+				<Property Name="PKG_buildNumber" Type="Int">0</Property>
+				<Property Name="PKG_buildSpecName" Type="Str">Pkg</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">0</Property>
+				<Property Name="PKG_description" Type="Str"></Property>
+				<Property Name="PKG_destinations.Count" Type="Int">5</Property>
+				<Property Name="PKG_destinations[0].ID" Type="Str">{20C7EE0C-558C-4C4D-80E8-006FC5726754}</Property>
+				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">Services</Property>
+				<Property Name="PKG_destinations[0].Subdir.Parent" Type="Str">{719B1BAC-9DF9-487C-83D5-7BAED43F5DA3}</Property>
+				<Property Name="PKG_destinations[0].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[1].ID" Type="Str">{719B1BAC-9DF9-487C-83D5-7BAED43F5DA3}</Property>
+				<Property Name="PKG_destinations[1].Subdir.Directory" Type="Str">MeasurementLink</Property>
+				<Property Name="PKG_destinations[1].Subdir.Parent" Type="Str">{975C529A-32B0-4599-9EE3-46067C0EB503}</Property>
+				<Property Name="PKG_destinations[1].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[2].ID" Type="Str">{975C529A-32B0-4599-9EE3-46067C0EB503}</Property>
+				<Property Name="PKG_destinations[2].Subdir.Directory" Type="Str">National Instruments</Property>
+				<Property Name="PKG_destinations[2].Subdir.Parent" Type="Str">root_4</Property>
+				<Property Name="PKG_destinations[2].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[3].ID" Type="Str">{A3B31573-CD0B-4CA3-854B-ABBD87806710}</Property>
+				<Property Name="PKG_destinations[3].Subdir.Directory" Type="Str">Summit PXI Bodeplot</Property>
+				<Property Name="PKG_destinations[3].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[3].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[4].ID" Type="Str">{D090872F-212C-4193-8981-C3F75588B46E}</Property>
+				<Property Name="PKG_destinations[4].Subdir.Directory" Type="Str">LabVIEW Bodeplot</Property>
+				<Property Name="PKG_destinations[4].Subdir.Parent" Type="Str">{20C7EE0C-558C-4C4D-80E8-006FC5726754}</Property>
+				<Property Name="PKG_destinations[4].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_displayName" Type="Str">My Package</Property>
+				<Property Name="PKG_displayVersion" Type="Str"></Property>
+				<Property Name="PKG_feedDescription" Type="Str"></Property>
+				<Property Name="PKG_feedName" Type="Str"></Property>
+				<Property Name="PKG_homepage" Type="Str"></Property>
+				<Property Name="PKG_hostname" Type="Str"></Property>
+				<Property Name="PKG_maintainer" Type="Str">Kreiseder IT Services e.U. &lt;&gt;</Property>
+				<Property Name="PKG_output" Type="Path">../builds/NI_AB_PROJECTNAME/Pkg/Package</Property>
+				<Property Name="PKG_output.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="PKG_packageName" Type="Str">summit-pxi-bodeplot</Property>
+				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
+				<Property Name="PKG_section" Type="Str">Application Software</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">1</Property>
+				<Property Name="PKG_shortcuts[0].Destination" Type="Str">root_8</Property>
+				<Property Name="PKG_shortcuts[0].Name" Type="Str">LabVIEWBodeplotSummit</Property>
+				<Property Name="PKG_shortcuts[0].Path" Type="Path">Summit PXI Bodeplot</Property>
+				<Property Name="PKG_shortcuts[0].Target.Child" Type="Str">{7851922C-B20F-4342-B6EC-7DFAAD624B47}</Property>
+				<Property Name="PKG_shortcuts[0].Target.Destination" Type="Str">{D090872F-212C-4193-8981-C3F75588B46E}</Property>
+				<Property Name="PKG_shortcuts[0].Target.Source" Type="Ref">/My Computer/Build Specifications/LabVIEW Bodeplot Summit</Property>
+				<Property Name="PKG_shortcuts[0].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_sources.Count" Type="Int">1</Property>
+				<Property Name="PKG_sources[0].Destination" Type="Str">{D090872F-212C-4193-8981-C3F75588B46E}</Property>
+				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/LabVIEW Bodeplot Summit</Property>
+				<Property Name="PKG_sources[0].Type" Type="Str">EXE Build</Property>
+				<Property Name="PKG_synopsis" Type="Str">Summit PXI Bodeplot</Property>
+				<Property Name="PKG_version" Type="Str">1.0.0</Property>
 			</Item>
 		</Item>
 	</Item>

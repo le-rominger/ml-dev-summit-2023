@@ -22,7 +22,7 @@ service_directory = pathlib.Path(__file__).resolve().parent
 measurement_service = nims.MeasurementService(
     service_config_path=service_directory / "PythonBodeplotSummit.serviceconfig",
     version="1.0.0.0",
-    ui_file_paths=[service_directory / "PythonBodeplotSummit.measui"],
+    ui_file_paths=[service_directory / "Measurement UI.measui"],
 )
 
 # -- configure ML parameters for measurement service
@@ -136,7 +136,7 @@ def measure(filter_pins:str,
         bp.measure()
         # bp.measure_single()
         # print(bp.phases)
-        return (bp.gains,bp.phases,bp.f_cut_off,1.0)
+        return (bp.gains,bp.phases,bp.gains[-1],bp.phases[-1])
     return ()
 
 
