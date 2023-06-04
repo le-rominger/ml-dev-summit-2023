@@ -15,7 +15,10 @@ builds/*
 *.aliases
 *.lvlps
 .cache/
-
+# TestStand
+*.tso
+*.opt
+*.xml
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

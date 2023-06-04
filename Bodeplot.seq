@@ -8976,730 +8976,6 @@ Str(Step.Parameters.GetNumElements())
 										</value>
 										<value>
 											<Step typename='NI_Measurement' xsi:type='_CustomStepType_' name='Acquire a waveform using an NI oscilloscope'>
-												<comment>-- Call Python Service</comment>
-												<subprops>
-													<TS classname='Obj'>
-														<subprops>
-															<Id classname='Str'>
-																<value>ID#:1m8fotxw7RGuNrjdh1OqZD</value>
-															</Id>
-															<Icon classname='Str'>
-																<value>Measurement\Measurement.ico</value>
-															</Icon>
-															<PreCond classname='ExprValue'>
-																<value/>
-															</PreCond>
-															<LoadOpt classname='Str'>
-																<value>PreloadWhenExecuted</value>
-															</LoadOpt>
-															<UnloadOpt classname='Str'>
-																<value>UnloadWithFile</value>
-															</UnloadOpt>
-															<Mode classname='Str'>
-																<value>Skip</value>
-															</Mode>
-															<WindowActivation classname='Str'>
-																<value>None</value>
-															</WindowActivation>
-															<ResultOption classname='Num'>
-																<value>1</value>
-															</ResultOption>
-															<StepFCSeqF classname='Bool'>
-																<value>true</value>
-															</StepFCSeqF>
-															<IgnoreRTE classname='Bool'>
-																<value>false</value>
-															</IgnoreRTE>
-															<UseMutex classname='Bool'>
-																<value>false</value>
-															</UseMutex>
-															<MutexNameOrRef classname='ExprValue'>
-																<value/>
-															</MutexNameOrRef>
-															<BatchSyncOpt classname='Num'>
-																<value>0</value>
-															</BatchSyncOpt>
-															<SwitchEnabled classname='Bool'>
-																<value>false</value>
-															</SwitchEnabled>
-															<VirtualDeviceName classname='ExprValue'>
-																<value/>
-															</VirtualDeviceName>
-															<SwitchOperation classname='Num'>
-																<value>1</value>
-															</SwitchOperation>
-															<RouteGroupConnect classname='ExprValue'>
-																<value/>
-															</RouteGroupConnect>
-															<RouteGroupDisconnect classname='ExprValue'>
-																<value/>
-															</RouteGroupDisconnect>
-															<MulticonnectMode classname='Num'>
-																<value>1</value>
-															</MulticonnectMode>
-															<OperationOrder classname='Num'>
-																<value>2</value>
-															</OperationOrder>
-															<ConnectionLifetime classname='Num'>
-																<value>4</value>
-															</ConnectionLifetime>
-															<WaitForDebounce classname='Bool'>
-																<value>true</value>
-															</WaitForDebounce>
-															<PassAct classname='Str'>
-																<value>Next</value>
-															</PassAct>
-															<FailAct classname='Str'>
-																<value>Next</value>
-															</FailAct>
-															<PassActTarget classname='ExprValue'>
-																<value/>
-															</PassActTarget>
-															<FailActTarget classname='ExprValue'>
-																<value/>
-															</FailActTarget>
-															<CustExpr classname='ExprValue'>
-																<value/>
-															</CustExpr>
-															<CustTrueAct classname='Str'>
-																<value>Next</value>
-															</CustTrueAct>
-															<CustFalseAct classname='Str'>
-																<value>Next</value>
-															</CustFalseAct>
-															<CustTrueActTarget classname='ExprValue'>
-																<value/>
-															</CustTrueActTarget>
-															<CustFalseActTarget classname='ExprValue'>
-																<value/>
-															</CustFalseActTarget>
-															<LoopType classname='Str'>
-																<value>NoLooping</value>
-															</LoopType>
-															<LoopWhile classname='ExprValue'>
-																<value/>
-															</LoopWhile>
-															<LoopStatus classname='ExprValue'>
-																<value/>
-															</LoopStatus>
-															<LoopIncrement classname='ExprValue'>
-																<value>RunState.LoopIndex += 1</value>
-															</LoopIncrement>
-															<LoopInitialize classname='ExprValue'>
-																<value>RunState.LoopIndex = 0</value>
-															</LoopInitialize>
-															<LoopOpt classname='Num'>
-																<value>0</value>
-															</LoopOpt>
-															<PreExpr classname='ExprValue'>
-																<value/>
-															</PreExpr>
-															<PostExpr classname='ExprValue'>
-																<value/>
-															</PostExpr>
-															<StatusExpr classname='ExprValue'>
-																<value/>
-															</StatusExpr>
-															<CanEditCode classname='Bool'>
-																<value>true</value>
-															</CanEditCode>
-															<CanEditModulePrototype classname='Bool'>
-																<value>true</value>
-															</CanEditModulePrototype>
-															<CanEditParameterAdditionalResults classname='Bool'>
-																<value>true</value>
-															</CanEditParameterAdditionalResults>
-															<PrecondIntExe classname='Num'>
-																<value>0</value>
-															</PrecondIntExe>
-															<CustomResults classname='Objs'>
-																<value lbound='[0]' ubound='[]'>
-																	<elemproto>
-																		<_NAME_IN_ATTRIBUTE_ name='' classname='CustomResult'>
-																			<subprops>
-																				<Name classname='ExprValue'>
-																					<value/>
-																				</Name>
-																				<ValueToLog classname='ExprValue'>
-																					<value/>
-																				</ValueToLog>
-																				<Condition classname='ExprValue'>
-																					<value/>
-																				</Condition>
-																				<Flags classname='Num'>
-																					<value>8192</value>
-																				</Flags>
-																				<CheckedState classname='Num'>
-																					<value>2</value>
-																				</CheckedState>
-																				<Type classname='PropertyObjectType'>
-																					<subprops>
-																						<ValueType classname='Num'>
-																							<value>3</value>
-																						</ValueType>
-																						<IsObject classname='Bool'>
-																							<value>true</value>
-																						</IsObject>
-																						<TypeName classname='Str'>
-																							<value/>
-																						</TypeName>
-																						<ElementType classname='Objs'>
-																							<value lbound='[0]' ubound='[]'/>
-																						</ElementType>
-																						<ArrayDimensions classname='ArrayDimensions'>
-																							<subprops>
-																								<LowerBounds classname='Nums'>
-																									<value lbound='[0]' ubound='[]'/>
-																								</LowerBounds>
-																								<UpperBounds classname='Nums'>
-																									<value lbound='[0]' ubound='[]'/>
-																								</UpperBounds>
-																							</subprops>
-																						</ArrayDimensions>
-																						<Representation classname='Num'>
-																							<value>1</value>
-																						</Representation>
-																						<ClassName classname='Str'>
-																							<value/>
-																						</ClassName>
-																					</subprops>
-																				</Type>
-																				<Elements classname='Objs'>
-																					<value lbound='[0]' ubound='[]'/>
-																				</Elements>
-																				<IsAnyType classname='Bool'>
-																					<value>true</value>
-																				</IsAnyType>
-																			</subprops>
-																		</_NAME_IN_ATTRIBUTE_>
-																	</elemproto>
-																</value>
-															</CustomResults>
-															<AdditionalResultsHints classname='Objs'>
-																<value lbound='[0]' ubound='[]'>
-																	<elemproto>
-																		<_NAME_IN_ATTRIBUTE_ name='' classname='CustomResult'>
-																			<subprops>
-																				<Name classname='ExprValue'>
-																					<value/>
-																				</Name>
-																				<ValueToLog classname='ExprValue'>
-																					<value/>
-																				</ValueToLog>
-																				<Condition classname='ExprValue'>
-																					<value/>
-																				</Condition>
-																				<Flags classname='Num'>
-																					<value>8192</value>
-																				</Flags>
-																				<CheckedState classname='Num'>
-																					<value>2</value>
-																				</CheckedState>
-																				<Type classname='PropertyObjectType'>
-																					<subprops>
-																						<ValueType classname='Num'>
-																							<value>3</value>
-																						</ValueType>
-																						<IsObject classname='Bool'>
-																							<value>true</value>
-																						</IsObject>
-																						<TypeName classname='Str'>
-																							<value/>
-																						</TypeName>
-																						<ElementType classname='Objs'>
-																							<value lbound='[0]' ubound='[]'/>
-																						</ElementType>
-																						<ArrayDimensions classname='ArrayDimensions'>
-																							<subprops>
-																								<LowerBounds classname='Nums'>
-																									<value lbound='[0]' ubound='[]'/>
-																								</LowerBounds>
-																								<UpperBounds classname='Nums'>
-																									<value lbound='[0]' ubound='[]'/>
-																								</UpperBounds>
-																							</subprops>
-																						</ArrayDimensions>
-																						<Representation classname='Num'>
-																							<value>1</value>
-																						</Representation>
-																						<ClassName classname='Str'>
-																							<value/>
-																						</ClassName>
-																					</subprops>
-																				</Type>
-																				<Elements classname='Objs'>
-																					<value lbound='[0]' ubound='[]'/>
-																				</Elements>
-																				<IsAnyType classname='Bool'>
-																					<value>true</value>
-																				</IsAnyType>
-																			</subprops>
-																		</_NAME_IN_ATTRIBUTE_>
-																	</elemproto>
-																</value>
-															</AdditionalResultsHints>
-														</subprops>
-													</TS>
-													<Result classname='Obj'>
-														<subprops>
-															<Error classname='Obj'>
-																<subprops>
-																	<Code classname='Num'>
-																		<value>0</value>
-																	</Code>
-																	<Msg classname='Str'>
-																		<value/>
-																	</Msg>
-																	<Occurred classname='Bool'>
-																		<value>false</value>
-																	</Occurred>
-																</subprops>
-															</Error>
-															<Status classname='Str'>
-																<value/>
-															</Status>
-															<ReportText classname='Str'>
-																<value/>
-															</ReportText>
-															<Common classname='Obj'/>
-														</subprops>
-													</Result>
-													<Measurement classname='Obj'>
-														<subprops>
-															<Name classname='Str'>
-																<value>Python Bodeplot Summit_Python</value>
-															</Name>
-															<Parameters classname='Objs'>
-																<value lbound='[0]' ubound='[12]'>
-																	<elemproto>
-																		<_NAME_IN_ATTRIBUTE_ name='' classname='Obj'>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value/>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value/>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value/>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>false</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>0</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value/>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>0</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value/>
-																				</TypeSpecialization>
-																			</subprops>
-																		</_NAME_IN_ATTRIBUTE_>
-																	</elemproto>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>filter_pins</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value>{"Vin_measure","Vout_measure"}</value>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>In</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>true</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>1</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeString</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>1</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>Pin</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>Vin_signal</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value>"Vin_signal"</value>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>In</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>true</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>0</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeString</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>2</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>Pin</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>Start Frequency</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value>Locals.Frequency</value>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>In</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>true</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>0</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeDouble</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>3</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>None</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>Stop Frequency</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value>Locals.Frequency+100</value>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>In</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>true</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>0</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeDouble</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>4</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>None</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>Amplitude</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value>1</value>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>In</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>true</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>0</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeDouble</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>5</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>None</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>Frequency Steps</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value>1i64</value>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>In</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>false</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>0</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeInt32</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>6</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>None</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>Simulate</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value>Locals.Simulate</value>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>In</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>false</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>0</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeBool</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>7</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>None</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>R1</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value>3300</value>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>In</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>true</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>0</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeDouble</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>8</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>None</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>C1</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value>6.8E-09</value>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>In</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>true</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>0</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeDouble</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>9</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>None</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>Gain</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value/>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>Out</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>false</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>1</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeDouble</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>1</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>None</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>Phase</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value/>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>Out</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>false</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>1</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeDouble</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>2</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>None</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>actual_gain</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value>Locals.Results.gain</value>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>Out</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>true</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>0</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeDouble</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>3</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>None</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>actual_phase</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value>Locals.Results.phase</value>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>Out</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>true</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>0</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeDouble</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>4</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>None</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																</value>
-															</Parameters>
-														</subprops>
-													</Measurement>
-												</subprops>
-											</Step>
-										</value>
-										<value>
-											<Step typename='NI_Measurement' xsi:type='_CustomStepType_' name='Acquire a waveform using an NI oscilloscope'>
 												<comment>-- Call LabVIEW Service</comment>
 												<subprops>
 													<TS classname='Obj'>
@@ -10454,12 +9730,12 @@ Str(Step.Parameters.GetNumElements())
 										</value>
 										<value>
 											<Step typename='NI_Measurement' xsi:type='_CustomStepType_' name='Acquire a waveform using an NI oscilloscope'>
-												<comment>-- Call Python Service: Simulation</comment>
+												<comment>-- Call Python Service</comment>
 												<subprops>
 													<TS classname='Obj'>
 														<subprops>
 															<Id classname='Str'>
-																<value>ID#:ApGueNoC7hGDJwCALxTATB</value>
+																<value>ID#:1m8fotxw7RGuNrjdh1OqZD</value>
 															</Id>
 															<Icon classname='Str'>
 																<value>Measurement\Measurement.ico</value>
@@ -11177,6 +10453,730 @@ Str(Step.Parameters.GetNumElements())
 											</Step>
 										</value>
 										<value>
+											<Step typename='NI_Measurement' xsi:type='_CustomStepType_' name='Acquire a waveform using an NI oscilloscope'>
+												<comment>-- Call Python Service: Simulation</comment>
+												<subprops>
+													<TS classname='Obj'>
+														<subprops>
+															<Id classname='Str'>
+																<value>ID#:ApGueNoC7hGDJwCALxTATB</value>
+															</Id>
+															<Icon classname='Str'>
+																<value>Measurement\Measurement.ico</value>
+															</Icon>
+															<PreCond classname='ExprValue'>
+																<value/>
+															</PreCond>
+															<LoadOpt classname='Str'>
+																<value>PreloadWhenExecuted</value>
+															</LoadOpt>
+															<UnloadOpt classname='Str'>
+																<value>UnloadWithFile</value>
+															</UnloadOpt>
+															<Mode classname='Str'>
+																<value>Skip</value>
+															</Mode>
+															<WindowActivation classname='Str'>
+																<value>None</value>
+															</WindowActivation>
+															<ResultOption classname='Num'>
+																<value>1</value>
+															</ResultOption>
+															<StepFCSeqF classname='Bool'>
+																<value>true</value>
+															</StepFCSeqF>
+															<IgnoreRTE classname='Bool'>
+																<value>false</value>
+															</IgnoreRTE>
+															<UseMutex classname='Bool'>
+																<value>false</value>
+															</UseMutex>
+															<MutexNameOrRef classname='ExprValue'>
+																<value/>
+															</MutexNameOrRef>
+															<BatchSyncOpt classname='Num'>
+																<value>0</value>
+															</BatchSyncOpt>
+															<SwitchEnabled classname='Bool'>
+																<value>false</value>
+															</SwitchEnabled>
+															<VirtualDeviceName classname='ExprValue'>
+																<value/>
+															</VirtualDeviceName>
+															<SwitchOperation classname='Num'>
+																<value>1</value>
+															</SwitchOperation>
+															<RouteGroupConnect classname='ExprValue'>
+																<value/>
+															</RouteGroupConnect>
+															<RouteGroupDisconnect classname='ExprValue'>
+																<value/>
+															</RouteGroupDisconnect>
+															<MulticonnectMode classname='Num'>
+																<value>1</value>
+															</MulticonnectMode>
+															<OperationOrder classname='Num'>
+																<value>2</value>
+															</OperationOrder>
+															<ConnectionLifetime classname='Num'>
+																<value>4</value>
+															</ConnectionLifetime>
+															<WaitForDebounce classname='Bool'>
+																<value>true</value>
+															</WaitForDebounce>
+															<PassAct classname='Str'>
+																<value>Next</value>
+															</PassAct>
+															<FailAct classname='Str'>
+																<value>Next</value>
+															</FailAct>
+															<PassActTarget classname='ExprValue'>
+																<value/>
+															</PassActTarget>
+															<FailActTarget classname='ExprValue'>
+																<value/>
+															</FailActTarget>
+															<CustExpr classname='ExprValue'>
+																<value/>
+															</CustExpr>
+															<CustTrueAct classname='Str'>
+																<value>Next</value>
+															</CustTrueAct>
+															<CustFalseAct classname='Str'>
+																<value>Next</value>
+															</CustFalseAct>
+															<CustTrueActTarget classname='ExprValue'>
+																<value/>
+															</CustTrueActTarget>
+															<CustFalseActTarget classname='ExprValue'>
+																<value/>
+															</CustFalseActTarget>
+															<LoopType classname='Str'>
+																<value>NoLooping</value>
+															</LoopType>
+															<LoopWhile classname='ExprValue'>
+																<value/>
+															</LoopWhile>
+															<LoopStatus classname='ExprValue'>
+																<value/>
+															</LoopStatus>
+															<LoopIncrement classname='ExprValue'>
+																<value>RunState.LoopIndex += 1</value>
+															</LoopIncrement>
+															<LoopInitialize classname='ExprValue'>
+																<value>RunState.LoopIndex = 0</value>
+															</LoopInitialize>
+															<LoopOpt classname='Num'>
+																<value>0</value>
+															</LoopOpt>
+															<PreExpr classname='ExprValue'>
+																<value/>
+															</PreExpr>
+															<PostExpr classname='ExprValue'>
+																<value/>
+															</PostExpr>
+															<StatusExpr classname='ExprValue'>
+																<value/>
+															</StatusExpr>
+															<CanEditCode classname='Bool'>
+																<value>true</value>
+															</CanEditCode>
+															<CanEditModulePrototype classname='Bool'>
+																<value>true</value>
+															</CanEditModulePrototype>
+															<CanEditParameterAdditionalResults classname='Bool'>
+																<value>true</value>
+															</CanEditParameterAdditionalResults>
+															<PrecondIntExe classname='Num'>
+																<value>0</value>
+															</PrecondIntExe>
+															<CustomResults classname='Objs'>
+																<value lbound='[0]' ubound='[]'>
+																	<elemproto>
+																		<_NAME_IN_ATTRIBUTE_ name='' classname='CustomResult'>
+																			<subprops>
+																				<Name classname='ExprValue'>
+																					<value/>
+																				</Name>
+																				<ValueToLog classname='ExprValue'>
+																					<value/>
+																				</ValueToLog>
+																				<Condition classname='ExprValue'>
+																					<value/>
+																				</Condition>
+																				<Flags classname='Num'>
+																					<value>8192</value>
+																				</Flags>
+																				<CheckedState classname='Num'>
+																					<value>2</value>
+																				</CheckedState>
+																				<Type classname='PropertyObjectType'>
+																					<subprops>
+																						<ValueType classname='Num'>
+																							<value>3</value>
+																						</ValueType>
+																						<IsObject classname='Bool'>
+																							<value>true</value>
+																						</IsObject>
+																						<TypeName classname='Str'>
+																							<value/>
+																						</TypeName>
+																						<ElementType classname='Objs'>
+																							<value lbound='[0]' ubound='[]'/>
+																						</ElementType>
+																						<ArrayDimensions classname='ArrayDimensions'>
+																							<subprops>
+																								<LowerBounds classname='Nums'>
+																									<value lbound='[0]' ubound='[]'/>
+																								</LowerBounds>
+																								<UpperBounds classname='Nums'>
+																									<value lbound='[0]' ubound='[]'/>
+																								</UpperBounds>
+																							</subprops>
+																						</ArrayDimensions>
+																						<Representation classname='Num'>
+																							<value>1</value>
+																						</Representation>
+																						<ClassName classname='Str'>
+																							<value/>
+																						</ClassName>
+																					</subprops>
+																				</Type>
+																				<Elements classname='Objs'>
+																					<value lbound='[0]' ubound='[]'/>
+																				</Elements>
+																				<IsAnyType classname='Bool'>
+																					<value>true</value>
+																				</IsAnyType>
+																			</subprops>
+																		</_NAME_IN_ATTRIBUTE_>
+																	</elemproto>
+																</value>
+															</CustomResults>
+															<AdditionalResultsHints classname='Objs'>
+																<value lbound='[0]' ubound='[]'>
+																	<elemproto>
+																		<_NAME_IN_ATTRIBUTE_ name='' classname='CustomResult'>
+																			<subprops>
+																				<Name classname='ExprValue'>
+																					<value/>
+																				</Name>
+																				<ValueToLog classname='ExprValue'>
+																					<value/>
+																				</ValueToLog>
+																				<Condition classname='ExprValue'>
+																					<value/>
+																				</Condition>
+																				<Flags classname='Num'>
+																					<value>8192</value>
+																				</Flags>
+																				<CheckedState classname='Num'>
+																					<value>2</value>
+																				</CheckedState>
+																				<Type classname='PropertyObjectType'>
+																					<subprops>
+																						<ValueType classname='Num'>
+																							<value>3</value>
+																						</ValueType>
+																						<IsObject classname='Bool'>
+																							<value>true</value>
+																						</IsObject>
+																						<TypeName classname='Str'>
+																							<value/>
+																						</TypeName>
+																						<ElementType classname='Objs'>
+																							<value lbound='[0]' ubound='[]'/>
+																						</ElementType>
+																						<ArrayDimensions classname='ArrayDimensions'>
+																							<subprops>
+																								<LowerBounds classname='Nums'>
+																									<value lbound='[0]' ubound='[]'/>
+																								</LowerBounds>
+																								<UpperBounds classname='Nums'>
+																									<value lbound='[0]' ubound='[]'/>
+																								</UpperBounds>
+																							</subprops>
+																						</ArrayDimensions>
+																						<Representation classname='Num'>
+																							<value>1</value>
+																						</Representation>
+																						<ClassName classname='Str'>
+																							<value/>
+																						</ClassName>
+																					</subprops>
+																				</Type>
+																				<Elements classname='Objs'>
+																					<value lbound='[0]' ubound='[]'/>
+																				</Elements>
+																				<IsAnyType classname='Bool'>
+																					<value>true</value>
+																				</IsAnyType>
+																			</subprops>
+																		</_NAME_IN_ATTRIBUTE_>
+																	</elemproto>
+																</value>
+															</AdditionalResultsHints>
+														</subprops>
+													</TS>
+													<Result classname='Obj'>
+														<subprops>
+															<Error classname='Obj'>
+																<subprops>
+																	<Code classname='Num'>
+																		<value>0</value>
+																	</Code>
+																	<Msg classname='Str'>
+																		<value/>
+																	</Msg>
+																	<Occurred classname='Bool'>
+																		<value>false</value>
+																	</Occurred>
+																</subprops>
+															</Error>
+															<Status classname='Str'>
+																<value/>
+															</Status>
+															<ReportText classname='Str'>
+																<value/>
+															</ReportText>
+															<Common classname='Obj'/>
+														</subprops>
+													</Result>
+													<Measurement classname='Obj'>
+														<subprops>
+															<Name classname='Str'>
+																<value>Python Bodeplot Summit_Python</value>
+															</Name>
+															<Parameters classname='Objs'>
+																<value lbound='[0]' ubound='[12]'>
+																	<elemproto>
+																		<_NAME_IN_ATTRIBUTE_ name='' classname='Obj'>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value/>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value/>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value/>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>false</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value/>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>0</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value/>
+																				</TypeSpecialization>
+																			</subprops>
+																		</_NAME_IN_ATTRIBUTE_>
+																	</elemproto>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>filter_pins</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value>{"Vin_measure","Vout_measure"}</value>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>In</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>true</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>1</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeString</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>1</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>Pin</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>Vin_signal</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value>"Vin_signal"</value>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>In</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>true</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeString</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>2</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>Pin</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>Start Frequency</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value>Locals.Frequency</value>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>In</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>true</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeDouble</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>3</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>Stop Frequency</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value>Locals.Frequency+100</value>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>In</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>true</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeDouble</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>4</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>Amplitude</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value>1</value>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>In</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>true</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeDouble</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>5</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>Frequency Steps</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value>1i64</value>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>In</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>false</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeInt32</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>6</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>Simulate</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value>True</value>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>In</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>false</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeBool</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>7</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>R1</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value>3300</value>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>In</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>true</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeDouble</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>8</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>C1</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value>6.8E-09</value>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>In</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>true</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeDouble</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>9</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>Gain</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value/>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>Out</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>false</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>1</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeDouble</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>1</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>Phase</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value/>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>Out</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>false</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>1</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeDouble</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>2</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>actual_gain</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value>Locals.Results.gain</value>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>Out</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>true</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeDouble</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>3</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>actual_phase</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value>Locals.Results.phase</value>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>Out</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>true</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeDouble</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>4</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																</value>
+															</Parameters>
+														</subprops>
+													</Measurement>
+												</subprops>
+											</Step>
+										</value>
+										<value>
 											<Step typename='Statement' xsi:type='Statement' name='Statement'>
 												<subprops>
 													<TS classname='Obj'>
@@ -11197,7 +11197,7 @@ Str(Step.Parameters.GetNumElements())
 																<value>UnloadWithFile</value>
 															</UnloadOpt>
 															<Mode classname='Str'>
-																<value>Skip</value>
+																<value>Normal</value>
 															</Mode>
 															<WindowActivation classname='Str'>
 																<value>None</value>
@@ -11296,7 +11296,7 @@ Str(Step.Parameters.GetNumElements())
 																<value/>
 															</PreExpr>
 															<PostExpr classname='ExprValue'>
-																<value/>
+																<value>OutputMessage("f = "+ Str(Locals.Frequency,"%g Hz; ") + "Gain = "+Str(Locals.Results.gain,"%.2f dB; ") + "Phase = " + Str(Locals.Results.phase," %.2f °"),"Result",0,tsBlue)</value>
 															</PostExpr>
 															<StatusExpr classname='ExprValue'>
 																<value/>
@@ -15528,7 +15528,7 @@ Str(Step.Parameters.GetNumElements())
 					<MeasurementLink classname='Obj'>
 						<subprops>
 							<EnableMonitoring classname='Bool'>
-								<value>false</value>
+								<value>true</value>
 							</EnableMonitoring>
 							<PinMapFileName classname='Str'>
 								<value>PinMap.pinmap</value>
