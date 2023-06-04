@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <teststandfileheader type='SequenceFile' fileversion='982' productname='TestStand' productversion='2022 Q4 (22.0.0.49152)' compatibleversion='22.0.0.0' buildversion='22.0.0.49152' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ni.com/TestStand/22.0.0/SequenceFile">
 	<typelist>
-		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='40'>
+		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='37'>
 			<LabVIEWClusterArray classname='Objs' isroottypedef='true' typecategory='3' timestamp='1664547547' typeversion='22.0.0.49152' typelastmodversion='22.0.0.49152' typeminprodversion='22.0.0.0' typeflags='33554436'>
 				<value lbound='[0]' ubound='[]'>
 					<elemproto>
@@ -1999,7 +1999,7 @@
 		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='18'>
 			<NoneStepAdditions classname='NoneModule' isroottypedef='true' typecategory='3' timestamp='1664548607' typeversion='22.0.0.49152' typelastmodversion='22.0.0.49152' typeminprodversion='22.0.0.0' typeflags='33554436' valueflags='24'/>
 		</typedef>
-		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='32'>
+		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='29'>
 			<NI_SweepSessionSettings classname='Obj' isroottypedef='true' typecategory='3' timestamp='1650629785' typeversion='22.0.0.1' typelastmodversion='22.0.0.0' typeminprodversion='22.0.0.0' typeflags='33554436' valueflags='8'>
 				<subprops>
 					<Channel classname='Str'>
@@ -2023,7 +2023,7 @@
 				</subprops>
 			</NI_SweepSessionSettings>
 		</typedef>
-		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='31'>
+		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='28'>
 			<NI_SweepParameter classname='Obj' isroottypedef='true' typecategory='3' timestamp='1651012175' typeversion='22.0.0.2' typelastmodversion='22.0.0.0' typeminprodversion='22.0.0.0' typeflags='33554436' valueflags='8'>
 				<subprops>
 					<ParameterStrategy classname='Str'>
@@ -2109,7 +2109,7 @@
 				</subprops>
 			</NI_SweepParameter>
 		</typedef>
-		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='30'>
+		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='27'>
 			<NI_Flow_SweepLoop classname='StepType' isroottypedef='true' typecategory='1' timestamp='1651029396' typeversion='22.0.0.3' typelastmodversion='22.0.0.0' typeminprodversion='22.0.0.0' typeflags='33554438'>
 				<subprops>
 					<Result classname='Obj' flagsforinstances='4194304' valueflags='4194304'>
@@ -5937,7 +5937,7 @@ Str(Step.Parameters.GetNumElements())
 				</subprops>
 			</Statement>
 		</typedef>
-		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='33'>
+		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='30'>
 			<NI_Flow_End classname='StepType' isroottypedef='true' typecategory='1' timestamp='1650629784' typeversion='22.0.0.1' typelastmodversion='22.0.0.0' typeminprodversion='22.0.0.0' typeflags='33554438' flagsforinstances='67108864'>
 				<subprops>
 					<DescriptionFormat typename='Expression' xsi:type='Expression' classname='ExprValue' flagsforinstances='4718616' instanceoverrideflags='4718616' valueflags='4194328' structureflags='524288'>
@@ -6368,7 +6368,7 @@ Str(Step.Parameters.GetNumElements())
 				</subprops>
 			</NI_Flow_End>
 		</typedef>
-		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='39'>
+		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='36'>
 			<Label classname='StepType' isroottypedef='true' typecategory='1' timestamp='1650629804' typeversion='22.0.0.1' typelastmodversion='22.0.0.0' typeminprodversion='22.0.0.0' typeflags='33554446'>
 				<subprops>
 					<Substeps typename='StepTypeSubstepsArray' xsi:type='StepTypeSubstepsArray' classname='Objs' flagsforinstances='524312' instanceoverrideflags='655384'>
@@ -7915,7 +7915,7 @@ Str(Step.Parameters.GetNumElements())
 				</subprops>
 			</Action>
 		</typedef>
-		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='34'>
+		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='31'>
 			<NI_LabVIEWParameterResult classname='LabVIEWParameterResult' isroottypedef='true' typecategory='3' timestamp='1664547226' typeversion='22.0.0.49152' typelastmodversion='22.0.0.49152' typeminprodversion='22.0.0.0' typeflags='33554436' valueflags='24'>
 				<subprops>
 					<Condition typename='Expression' xsi:type='Expression' classname='ExprValue'>
@@ -7931,7 +7931,7 @@ Str(Step.Parameters.GetNumElements())
 				</subprops>
 			</NI_LabVIEWParameterResult>
 		</typedef>
-		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='35'>
+		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='32'>
 			<VIParameter classname='VIParameter' isroottypedef='true' typecategory='3' timestamp='1664547673' typeversion='22.0.0.49152' typelastmodversion='22.0.0.49152' typeminprodversion='22.0.0.0' typeflags='33554436' valueflags='24'>
 				<subprops>
 					<Label classname='Str'>
@@ -8010,7 +8010,7 @@ Str(Step.Parameters.GetNumElements())
 				</subprops>
 			</VIParameter>
 		</typedef>
-		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='36'>
+		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='33'>
 			<NI_NodeProperty classname='LVNodeProperty' isroottypedef='true' typecategory='3' timestamp='1664547673' typeversion='22.0.0.49152' typelastmodversion='22.0.0.49152' typeminprodversion='22.0.0.0' typeflags='33554436' valueflags='24'>
 				<subprops>
 					<LongName classname='Str'>
@@ -8031,7 +8031,7 @@ Str(Step.Parameters.GetNumElements())
 				</subprops>
 			</NI_NodeProperty>
 		</typedef>
-		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='37'>
+		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='34'>
 			<FlexGStepAdditions classname='FGModule' isroottypedef='true' typecategory='3' timestamp='1664547673' typeversion='22.0.0.49152' typelastmodversion='22.0.0.49152' typeminprodversion='22.0.0.0' typeflags='33554436' valueflags='24'>
 				<subprops>
 					<ViCall classname='VICall'>
@@ -8239,7 +8239,7 @@ Str(Step.Parameters.GetNumElements())
 				</subprops>
 			</FlexGStepAdditions>
 		</typedef>
-		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='38'>
+		<typedef alwayssavetype='false' additionaltypeflags='0' typelistordernum='35'>
 			<VIParameterElement classname='VIParameterElement' isroottypedef='true' typecategory='3' timestamp='1664547673' typeversion='22.0.0.49152' typelastmodversion='22.0.0.49152' typeminprodversion='22.0.0.0' typeflags='33554436' valueflags='24'>
 				<subprops>
 					<Label classname='Str'>
@@ -8996,7 +8996,7 @@ Str(Step.Parameters.GetNumElements())
 																<value>UnloadWithFile</value>
 															</UnloadOpt>
 															<Mode classname='Str'>
-																<value>Normal</value>
+																<value>Skip</value>
 															</Mode>
 															<WindowActivation classname='Str'>
 																<value>None</value>
@@ -9720,7 +9720,7 @@ Str(Step.Parameters.GetNumElements())
 																<value>UnloadWithFile</value>
 															</UnloadOpt>
 															<Mode classname='Str'>
-																<value>Skip</value>
+																<value>Normal</value>
 															</Mode>
 															<WindowActivation classname='Str'>
 																<value>None</value>
@@ -9991,10 +9991,10 @@ Str(Step.Parameters.GetNumElements())
 													<Measurement classname='Obj'>
 														<subprops>
 															<Name classname='Str'>
-																<value>Python Bodeplot Summit_Python</value>
+																<value>LabVIEW Bodeplot Summit_LabVIEW</value>
 															</Name>
 															<Parameters classname='Objs'>
-																<value lbound='[0]' ubound='[12]'>
+																<value lbound='[0]' ubound='[13]'>
 																	<elemproto>
 																		<_NAME_IN_ATTRIBUTE_ name='' classname='Obj'>
 																			<subprops>
@@ -10029,66 +10029,6 @@ Str(Step.Parameters.GetNumElements())
 																		<Obj typename='NI_MeasurementParameter' name=''>
 																			<subprops>
 																				<Name classname='Str'>
-																					<value>filter_pins</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value>{"Vin_measure","Vout_measure"}</value>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>In</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>true</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>1</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeString</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>1</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>Pin</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>Vin_signal</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value>"Vin_signal"</value>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>In</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>true</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>0</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeString</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>2</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>Pin</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
 																					<value>Start Frequency</value>
 																				</Name>
 																				<ArgumentValue classname='ExprValue'>
@@ -10098,7 +10038,7 @@ Str(Step.Parameters.GetNumElements())
 																					<value>In</value>
 																				</Direction>
 																				<Log classname='Bool'>
-																					<value>true</value>
+																					<value>false</value>
 																				</Log>
 																				<Dimension classname='Num'>
 																					<value representation='UInt64'>0</value>
@@ -10107,7 +10047,37 @@ Str(Step.Parameters.GetNumElements())
 																					<value>TypeDouble</value>
 																				</Type>
 																				<ID classname='Num'>
-																					<value representation='Int64'>3</value>
+																					<value representation='Int64'>1</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>Frequency Steps</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value>1</value>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>In</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>false</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeDouble</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>2</value>
 																				</ID>
 																				<TypeSpecialization classname='Str'>
 																					<value>None</value>
@@ -10128,7 +10098,7 @@ Str(Step.Parameters.GetNumElements())
 																					<value>In</value>
 																				</Direction>
 																				<Log classname='Bool'>
-																					<value>true</value>
+																					<value>false</value>
 																				</Log>
 																				<Dimension classname='Num'>
 																					<value representation='UInt64'>0</value>
@@ -10137,7 +10107,7 @@ Str(Step.Parameters.GetNumElements())
 																					<value>TypeDouble</value>
 																				</Type>
 																				<ID classname='Num'>
-																					<value representation='Int64'>4</value>
+																					<value representation='Int64'>3</value>
 																				</ID>
 																				<TypeSpecialization classname='Str'>
 																					<value>None</value>
@@ -10167,6 +10137,36 @@ Str(Step.Parameters.GetNumElements())
 																					<value>TypeDouble</value>
 																				</Type>
 																				<ID classname='Num'>
+																					<value representation='Int64'>4</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>Timing (ms)</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value>0ui64</value>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>In</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>true</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeUint32</value>
+																				</Type>
+																				<ID classname='Num'>
 																					<value representation='Int64'>5</value>
 																				</ID>
 																				<TypeSpecialization classname='Str'>
@@ -10179,28 +10179,58 @@ Str(Step.Parameters.GetNumElements())
 																		<Obj typename='NI_MeasurementParameter' name=''>
 																			<subprops>
 																				<Name classname='Str'>
-																					<value>Frequency Steps</value>
+																					<value>Vin_signal</value>
 																				</Name>
 																				<ArgumentValue classname='ExprValue'>
-																					<value>1i64</value>
+																					<value>"Vin_signal"</value>
 																				</ArgumentValue>
 																				<Direction classname='Str'>
 																					<value>In</value>
 																				</Direction>
 																				<Log classname='Bool'>
-																					<value>false</value>
+																					<value>true</value>
 																				</Log>
 																				<Dimension classname='Num'>
 																					<value representation='UInt64'>0</value>
 																				</Dimension>
 																				<Type classname='Str'>
-																					<value>TypeInt32</value>
+																					<value>TypeString</value>
 																				</Type>
 																				<ID classname='Num'>
 																					<value representation='Int64'>6</value>
 																				</ID>
 																				<TypeSpecialization classname='Str'>
-																					<value>None</value>
+																					<value>Pin</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>filter_pins</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value>"Vin_measure"</value>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>In</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>true</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeString</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>7</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>Pin</value>
 																				</TypeSpecialization>
 																			</subprops>
 																		</Obj>
@@ -10227,7 +10257,7 @@ Str(Step.Parameters.GetNumElements())
 																					<value>TypeBool</value>
 																				</Type>
 																				<ID classname='Num'>
-																					<value representation='Int64'>7</value>
+																					<value representation='Int64'>8</value>
 																				</ID>
 																				<TypeSpecialization classname='Str'>
 																					<value>None</value>
@@ -10242,37 +10272,7 @@ Str(Step.Parameters.GetNumElements())
 																					<value>R1</value>
 																				</Name>
 																				<ArgumentValue classname='ExprValue'>
-																					<value>3300</value>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>In</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>true</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>0</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeDouble</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>8</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>None</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>C1</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value>6.8E-09</value>
+																					<value>0</value>
 																				</ArgumentValue>
 																				<Direction classname='Str'>
 																					<value>In</value>
@@ -10299,55 +10299,25 @@ Str(Step.Parameters.GetNumElements())
 																		<Obj typename='NI_MeasurementParameter' name=''>
 																			<subprops>
 																				<Name classname='Str'>
-																					<value>Gain</value>
+																					<value>C1</value>
 																				</Name>
 																				<ArgumentValue classname='ExprValue'>
-																					<value/>
+																					<value>0</value>
 																				</ArgumentValue>
 																				<Direction classname='Str'>
-																					<value>Out</value>
+																					<value>In</value>
 																				</Direction>
 																				<Log classname='Bool'>
-																					<value>false</value>
+																					<value>true</value>
 																				</Log>
 																				<Dimension classname='Num'>
-																					<value representation='UInt64'>1</value>
+																					<value representation='UInt64'>0</value>
 																				</Dimension>
 																				<Type classname='Str'>
 																					<value>TypeDouble</value>
 																				</Type>
 																				<ID classname='Num'>
-																					<value representation='Int64'>1</value>
-																				</ID>
-																				<TypeSpecialization classname='Str'>
-																					<value>None</value>
-																				</TypeSpecialization>
-																			</subprops>
-																		</Obj>
-																	</value>
-																	<value>
-																		<Obj typename='NI_MeasurementParameter' name=''>
-																			<subprops>
-																				<Name classname='Str'>
-																					<value>Phase</value>
-																				</Name>
-																				<ArgumentValue classname='ExprValue'>
-																					<value/>
-																				</ArgumentValue>
-																				<Direction classname='Str'>
-																					<value>Out</value>
-																				</Direction>
-																				<Log classname='Bool'>
-																					<value>false</value>
-																				</Log>
-																				<Dimension classname='Num'>
-																					<value representation='UInt64'>1</value>
-																				</Dimension>
-																				<Type classname='Str'>
-																					<value>TypeDouble</value>
-																				</Type>
-																				<ID classname='Num'>
-																					<value representation='Int64'>2</value>
+																					<value representation='Int64'>10</value>
 																				</ID>
 																				<TypeSpecialization classname='Str'>
 																					<value>None</value>
@@ -10377,7 +10347,7 @@ Str(Step.Parameters.GetNumElements())
 																					<value>TypeDouble</value>
 																				</Type>
 																				<ID classname='Num'>
-																					<value representation='Int64'>3</value>
+																					<value representation='Int64'>1</value>
 																				</ID>
 																				<TypeSpecialization classname='Str'>
 																					<value>None</value>
@@ -10402,6 +10372,66 @@ Str(Step.Parameters.GetNumElements())
 																				</Log>
 																				<Dimension classname='Num'>
 																					<value representation='UInt64'>0</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeDouble</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>2</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>Gain</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value/>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>Out</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>false</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>1</value>
+																				</Dimension>
+																				<Type classname='Str'>
+																					<value>TypeDouble</value>
+																				</Type>
+																				<ID classname='Num'>
+																					<value representation='Int64'>3</value>
+																				</ID>
+																				<TypeSpecialization classname='Str'>
+																					<value>None</value>
+																				</TypeSpecialization>
+																			</subprops>
+																		</Obj>
+																	</value>
+																	<value>
+																		<Obj typename='NI_MeasurementParameter' name=''>
+																			<subprops>
+																				<Name classname='Str'>
+																					<value>Phase</value>
+																				</Name>
+																				<ArgumentValue classname='ExprValue'>
+																					<value/>
+																				</ArgumentValue>
+																				<Direction classname='Str'>
+																					<value>Out</value>
+																				</Direction>
+																				<Log classname='Bool'>
+																					<value>false</value>
+																				</Log>
+																				<Dimension classname='Num'>
+																					<value representation='UInt64'>1</value>
 																				</Dimension>
 																				<Type classname='Str'>
 																					<value>TypeDouble</value>
@@ -10444,7 +10474,7 @@ Str(Step.Parameters.GetNumElements())
 																<value>UnloadWithFile</value>
 															</UnloadOpt>
 															<Mode classname='Str'>
-																<value>Normal</value>
+																<value>Skip</value>
 															</Mode>
 															<WindowActivation classname='Str'>
 																<value>None</value>

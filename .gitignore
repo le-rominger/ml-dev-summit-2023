@@ -10,7 +10,7 @@
 
 # Executables
 *.exe
-
+builds/*
 # Metadata
 *.aliases
 *.lvlps
