@@ -59,6 +59,8 @@ class Bodeplot(BodeplotBase):
         self.scope.channels[channel_list].input_impedance = 1e6
         self.scope.channels[channel_list].vertical_range = 4
         self.scope.channels[channel_list].vertical_offset = 0
+        self.scope.configure_horizontal_timing(10.0e6, 100000, 50.0, 1,True)
+        self.scope.commit()
 
     def _re_config_scope(self):
 
@@ -83,10 +85,10 @@ class Bodeplot(BodeplotBase):
         self.scope.channels[0].vertical_range = 1.1*vout.result
         self.scope.channels[1].vertical_range = 1.1*vin.result
         # -- Fixed SR since expected cut-off is at 10k
-        sr = 1e6
+        sr = 10.0e6
         records = int(20 * 1/freq.result * sr)
         print(f"{freq.result} =>{records}")
-        self.scope.configure_horizontal_timing(sr, records, 50, 1,True)
+        self.scope.configure_horizontal_timing(sr, records, 50.0, 1,True)
         self.scope.commit()
 
     def _fetch_measurement(self) -> tuple:
@@ -95,6 +97,7 @@ class Bodeplot(BodeplotBase):
         Returns:
             tuple: gain, phase
         """
+        self.scope.initiate()
         self.scope.clear_waveform_measurement_stats(niscope.ClearableMeasurement.ALL_MEASUREMENTS)
         self.scope.clear_waveform_processing()
         self.scope.channels[0].add_waveform_processing(
@@ -110,7 +113,7 @@ class Bodeplot(BodeplotBase):
 
         phase = self.scope.channels[0].fetch_measurement_stats(
             niscope.ScalarMeasurement.PHASE_DELAY)[0]
-        phase = 360 - phase.result//360
+        phase = phase.result - 360 #//360
         gain = 20 * math.log10(vout.result/vin.result)
 
         return (gain, phase)
@@ -126,13 +129,14 @@ class Bodeplot(BodeplotBase):
 if __name__ == "__main__":
     #
     bp = Bodeplot()
-    bp.scope = niscope.Session("Scope", options={'simulate': True, 'driver_setup': {
+    simulate = False
+    bp.scope = niscope.Session("SCOPE", options={'simulate': simulate, 'driver_setup': {
                             'Model': '5122', 'BoardType': 'PXI'}})
-    bp.fgen = nifgen.Session("Fgen", options={'simulate': True, 'driver_setup': {
-                             'Model': '5421', 'BoardType': 'PXIe'}})
+    bp.fgen = nifgen.Session("FGEN", options={'simulate': simulate, 'driver_setup': {
+                             'Model': '5421', 'BoardType': 'PXI'}})
     bp.f_start = 200
     bp.f_stop = 50e3
-    bp.f_steps = 10
+    bp.f_steps = 50
     bp.amplitude = 2
     bp.measure()
     bp.plot()
