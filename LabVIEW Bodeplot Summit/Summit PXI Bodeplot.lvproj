@@ -11,9 +11,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Bode Plot - PXI.lvlib" Type="Library" URL="../LabVIEW Bodeplot Summit/Logic/Bode Plot - PXI.lvlib"/>
-		<Item Name="LabVIEW Bodeplot Summit.lvlib" Type="Library" URL="../LabVIEW Bodeplot Summit/LabVIEW Bodeplot Summit.lvlib"/>
-		<Item Name="Measurement UI.measui" Type="Document" URL="../LabVIEW Bodeplot Summit/Bodeplot UI/Measurement UI.measui"/>
+		<Item Name="Bode Plot - PXI.lvlib" Type="Library" URL="../Logic/Bode Plot - PXI.lvlib"/>
+		<Item Name="LabVIEW Bodeplot Summit.lvlib" Type="Library" URL="../LabVIEW Bodeplot Summit.lvlib"/>
+		<Item Name="Measurement UI.measui" Type="Document" URL="../Bodeplot UI/Measurement UI.measui"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="niFgen Abort Generation.vi" Type="VI" URL="/&lt;instrlib&gt;/niFgen/niFgen.llb/niFgen Abort Generation.vi"/>

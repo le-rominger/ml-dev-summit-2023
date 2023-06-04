@@ -3,12 +3,12 @@
 @description: Demonstrates the usage of Session Management to perform a bodeplot on a passive filter
 
 """
-
+# import win32file
 import contextlib
 import logging
 import pathlib
 import sys
-
+print(sys.platform)
 import click
 import grpc
 from typing import Tuple
